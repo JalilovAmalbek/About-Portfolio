@@ -1,0 +1,516 @@
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@700&family=Roboto:wght@500&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #DCDCDC;
+}
+
+/*loader*/
+.loader{
+	margin: 0 auto;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	animation: fadeOut 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation: fadeOut 1s;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation: fadeOut 1s;
+	-o-animation-fill-mode: forwards;
+	-moz-animation: fadeOut 1s;
+	-moz-animation-fill-mode: forwards;
+}
+.main{
+	margin: 15rem auto;
+	display: flex;
+	justify-content: center;
+
+}
+.dot{
+	border: 5px solid black;
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+}
+.dot2{
+	border: 5px solid #2F4F4F;
+	border-radius: 50px;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    margin: -5px -5px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    animation: loader 1s liner;
+    animation-iteration-count: infinite;
+    -webkit-animation: loader 1s liner;
+    -webkit-animation-iteration-count: infinite; 
+    -o-animation: loader 1s liner;
+    -o-animation-iteration-count: infinite; 
+    -moz-animation: loader 1s liner;
+    -moz-animation-iteration-count: infinite;  
+}
+@keyframes loader{
+	100%{
+        transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes loader{
+	100%{
+        transform: rotate(360deg);
+	}
+}
+@keyframes fadeOut{
+	100%{
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+@-webkit-keyframes fadeOut{
+	100%{
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+.navbar{
+	background-color: transparent! important;
+	margin: 0 2px;
+	justify-content: space-between;
+	transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+
+}
+#nav.fixed{
+	background-color: #2f4f4f !important;
+	padding: 0;
+}
+
+.None{
+	color: white;
+	margin-left: 30px;
+}
+h4:hover{
+    color: orange;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.navbar-nav{
+	font-weight: 500;
+	font-size: 20px;
+	margin: 10px; 
+	font-family: 'Roboto', sans-serif;
+}
+
+.nav-link{
+    color: #ffffff !important;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.nav-link:hover{
+    color: grey !important;
+
+}
+.homepage{
+	background: url("../Images/back.jpg") no-repeat;
+	background-size: cover;
+	height: 40rem;
+}
+
+.col-md-6{
+    margin: 30% auto;
+}
+
+.title p{
+	font-size: 1.5rem;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 0;
+	font-family: 'Lato', sans-serif;
+}
+.title h3{
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+.button{
+	width: 100%;
+	margin: 3rem 10rem auto;
+}
+
+.button a{
+	background-color: #ffff00;
+	color: #000000;
+	padding: 1.5rem 5.2rem;
+	border-radius: 12px;
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Services*/
+
+.services{
+	padding: 5rem 0 5rem 0;
+}
+.services .container h3{
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+.services .container .row .col-md-4 .card{
+	border-radius: 0;
+	border: none;
+}
+
+.services .container .row .col-md-4 .card .card-header{
+	text-align: center;
+	border-bottom: none;
+}
+.card .card-header i{
+    font-size: 2rem;
+    background-color: orange;
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+.card .card-body{
+	text-align: center;
+}
+
+
+
+/*Portfolio*/
+
+.Portfolio{
+	padding: 5rem 05rem;
+}
+ .Portfolio .container h3{
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+.col-md-4 .card .card-header img{
+	width: 100%;
+	background: transparent;
+}
+
+.card{
+	border: none;
+	border-radius: 0;
+}
+.card .card-header{
+	padding: 0;
+	background: transparent;
+	border-radius: 0;
+}
+
+.card-header .sloy{
+	width: 360px;
+	height: 281px;
+	background-color: #ffff00ce;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transform: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}	
+.sloy:hover{
+	opacity: 1;
+}
+
+.sloy h4{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.sloy p{
+	text-align: center;
+}
+
+
+/*Abmout me*/ 
+
+
+.About{
+	padding: 5rem 0 5rem;
+}
+.About .container h3{
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+.About .container .row .col-md-4{
+	margin: 4rem 5rem;
+}
+.About .container .row .col-md-4:nth-child(2){
+    margin: 9rem 0;
+}
+.information .Name{
+  font-size: 2.5rem;
+  font-style: #000000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.information p{
+	letter-spacing: 0.5px;
+    margin: 3rem 0 3rem;
+}
+
+.information ul li{
+	list-style-type: none;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.information ul{
+	margin-left: -1rem;
+}
+ ul li .firstName{
+ 	font-weight: bold;
+ }
+  ul li .birthday{
+ 	font-weight: bold;
+ }
+  ul li .address{
+ 	font-weight: bold;
+ }
+
+ ul li .fullName{
+ 	color: #808080;
+ 	font-family: 'Lato', sans-serif;
+ }
+  ul li .fullBirth{
+ 	color: #808080;
+ 	font-family: 'Lato', sans-serif;
+ }
+  ul li .fulladdress{
+ 	color: #808080;
+    font-family: 'Lato', sans-serif;
+ }
+
+
+
+/*Footer*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 200px;
+    }
+    .footer {
+      height: 300px;
+    }
+}
+
+/* footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: orange;
+  text-decoration:none;
+  border-bottom:2px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+.footer fieldset.send{
+	color: orange!important;
+}
+.footer fieldset .send button{
+	width: 80px;
+	height: 50px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+
+/*scroll */
+
+::-webkit-scrollbar{
+	width: 3px!important;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: red;
+}
+
+
+/* Responsive*/
+/*
+@media (min-width: 315px) and (max-width: 330px){
+	html, body{
+		overflow-x: hidden;
+	}
+
+	.dot, .dot2{
+		width: 50px;
+		height: 50px;
+	}
+
+	.navbar-brand{
+		padding: 0;
+		font-size: 1.3rem;
+	}
+	.navbar button{
+        border: none;
+	}
+	.change{
+		background-color: #50261D!important;
+	}
+	.nabar-nav{
+		margin: 0 5rem;
+	}
+	.navbar-nav li{
+		margin: 10px;
+	}
+
+
+/* Homepage*/
+/*
+  .homepage{
+  	height: 30rem;
+  }
+  .col-md-6{
+  	margin:50% auto;
+  }
+  .title p{
+	font-size: 1rem;
+  }
+  .title h3{
+    font-size: 1.7rem;
+  }
+  .button{
+  	margin: 3rem 5.5rem auto;
+  }
+  .button a{
+  	padding: 1rem 1.5rem;
+  	font-size: 1rem;
+  }
+
+  /*services*/
+  /*
+  .services .container h3{
+  	font-size: 1.8rem;
+  }
+  .services .container p{
+  	font-size: 0.9rem;
+  }
+  .card .card-header i{
+  	font-size: 2rem;
+  }
+
+  /*prtfoilo*/
+/*
+  .Portfolio .container h3{
+  	font-size: 1.7rem;
+  }
+  .Portfolio .container p{
+  	font-size: 0.9rem;
+  }
+  .card-header .sloy{
+    width: 100%;
+    height:100%;
+  }
+  .card-header .sloy h4{
+  	font-size: 10px;
+  }
+   .card-header .sloy p{
+   	font-size: 5px;
+   }
+
+   /*About*/
+/*
+   .About .container h3{
+  	font-size: 1.7rem;
+  }
+   .About .container p{
+  	font-size: 0.9rem;
+  }
+  .About .container .row .col-md-4{
+  	margin: 4rem 0;
+  }
+  .About .container .row .col-md-4:nth-child(2){
+  	margin: 4rem;
+  }
+  .information h4{
+  	font-size: 1.8rem;
+  }
+
+  .information ul li{
+  	font-size: 14px;
+  	margin-right: 5rem;
+  }
+
+  /* Footer*/
+  /*
+  .footer .col-md-5{
+  	margin-top: 10px;
+  }
+  
+}
+
